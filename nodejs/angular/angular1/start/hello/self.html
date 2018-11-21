@@ -1,0 +1,15 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" ng-app>
+  <body>
+ 	<h1>Hello {{name}}</h1>
+	<p>名字 : <input type="text" ng-model="name"></p>
+    <script>
+		var app = document.querySelector('[ng-app]');
+		for(var model of app.querySelectorAll('[ng-model]')){
+			//console.log(model);
+			var modelName = model.getAttribute('ng-model');
+			
+		}
+	</script>
+  </body>
+</html>
